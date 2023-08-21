@@ -1,0 +1,40 @@
+/* .preloader */
+.preloader {
+    height: 100vh;
+    height: calc(100 * var(--vh, 1vh));
+    /* Using the calc function */
+    width: 100%;
+    background: #000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden !important;
+}
+
+/* .preloader .texts-container */
+.preloader .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 25%;
+    font-size: 20px;
+    overflow: hidden;
+    font-weight: 800;
+    opacity: 0;
+    color: #fff;
+}
+
+/* Media Query for phones */
+@media (max-width: 480px) {
+    .preloader .texts-container {
+        font-size: 17px;
+        width: 240px;
+    }
+}
